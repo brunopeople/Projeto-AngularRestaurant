@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
-import { MenupageComponent } from './menupage/menupage.component';
-import { ContactComponent } from './contact/contact.component';
-import { MenuComponent } from './menu/menu.component';
-import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { MenupageComponent } from './pages/menupage/menupage.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './sharepage/footer/footer.component';
+import { NavbarComponent } from './sharepage/navbar/navbar.component';
 
 @NgModule({
   declarations: [

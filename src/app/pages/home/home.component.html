@@ -38,11 +38,11 @@
 <div class="container mt-4 mb-4">
     <h1 class="text-center">Clientes<span class="highlight">Sua Comida Favorita</span></h1>
     <div class="row">
-        <div class="col-lg-3 mt-3">
-            <div class="foodbox">
-                <img src="{{}}" />
-                <h1>{{}}</h1>
-                <p>{{}}</p>
+        <div class="col-lg-3 mt-3" *ngFor="let fd of foodData; index as i">
+            <div class="foodbox" *ngFor="i<=3">
+                <img src="{{fd.foodImg}}" />
+                <h1>{{fd.foodName}}</h1>
+                <p>{{fd.foodPrice | currency: 'INR'}}</p>
             </div>
         </div>
     </div>
